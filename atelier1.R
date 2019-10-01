@@ -13,17 +13,17 @@ x=2
 # variables
 tailles=c(167,192, 173, 174, 172, 167, 171, 185, 163, 170)
 tailles
-length(tailles) #taille échantillon
+length(tailles) #taille Ã©chantillon
 mean(tailles) # moyenne
-sd(tailles) # écart-type
+sd(tailles) # Ã©cart-type
 var(tailles) # variance
 summary(tailles)
-hist(tailles,main="histogramme représentant les tailles",ylab="fréquence",col="blue") #titre, couleur etc changés
+hist(tailles,main="histogramme reprÃ©sentant les tailles",ylab="frÃ©quence",col="blue") #titre, couleur etc changÃ©s
 poids=c(86,74,83,50,78,66,66,51,50,55)
 length(poids)
-tailles.st=(tailles-mean(tailles))/sd(tailles) # taille standardisée
+tailles.st=(tailles-mean(tailles))/sd(tailles) # taille standardisÃ©e
 tailles.st
-mean(tailles.st) # moyenne standardisée
+mean(tailles.st) # moyenne standardisÃ©e
 sd(tailles.st)
 # calcul de l'imc
 tailles.m = tailles/100
@@ -33,3 +33,5 @@ imc
 donnees=data.frame(tailles,poids,imc)
 donnees
 View(donnees)
+x=seq(from=0,to=10^6,by=1) # liste de 0 Ã  10^6 avec un pas de 1
+x[10000] # on demande quelle valeur est en position 10 000 dans x
